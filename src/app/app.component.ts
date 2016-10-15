@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Game Setup';
+
+  onTest(){
+  	return 1 === 1;
+  }
 }
