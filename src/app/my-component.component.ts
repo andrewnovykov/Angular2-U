@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 
 @Component({
@@ -13,6 +13,7 @@ import { Component } from '@angular/core';
 		<button [disabled]="inputElement.value !== 'yes'" >
 			Only enabled if 'yes' was entered
 		</button>
+		<app-test></app-test>
 
 
 	`,
@@ -21,6 +22,14 @@ import { Component } from '@angular/core';
 
 })
 
-export class MyComponentComponent {
-	name = 'MAX';
+export class MyComponentComponent implements OnInit {
+
+	name : string;
+
+	ngOnInit() {
+		this.name = 'MAX';
+		
+  	}
+
+	
 }
