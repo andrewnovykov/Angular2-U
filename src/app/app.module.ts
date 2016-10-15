@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { MyComponentComponent } from './my-component.component';
 import { TestComponent } from './test/test.component';
+import { PuzzleComponent } from './puzzle/puzzle.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyComponentComponent,
-    TestComponent
+    TestComponent,
+    PuzzleComponent
   ],
   imports: [
     BrowserModule,
